@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Cards</title>
+    <meta name="description" content="A flash card app for learning JavaScript concepts, with a progress bar and flip-to-reveal answers.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Flash Cards</h1>
+    </header>
+
+    <main>
+        <section class="flashcard-app">
+
+            <div class="progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <p id="progress-text">1 of 8</p>
+            </div>
+
+            <div class="card" id="card">
+               <p id="card-text" aria-live="polite">Question goes here</p>
+            </div>
+
+            <div class="controls">
+                <button type="button" id="prev-btn">Previous</button>
+                <button type="button" id="flip-btn">Show Answer</button>
+                <button type="button" id="next-btn">Next</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2026 Flash Cards</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
